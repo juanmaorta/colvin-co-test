@@ -1,6 +1,30 @@
+const cardContent = {
+  flexGrow: 1
+}
+
+const blackBackGround = {
+  backgroundColor: 'black'
+}
+
 const styles = theme => ({
   appBar: {
     position: 'relative'
+  },
+  buttons: {
+    marginTop: 16
+  },
+  blackCardTitle: {
+    color: 'white'
+  },
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  blackBackGround,
+  blackCardContent: {
+    ...cardContent,
+    ...blackBackGround
   },
   footer: {
     backgroundColor: theme.palette.background.paper,

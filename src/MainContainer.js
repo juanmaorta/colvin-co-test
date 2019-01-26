@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
 import NotFound from './util/NotFound'
+import CardListContainer from './cards/CardListContainer'
+import CardDetailContainer from './cards/CardDetailContainer'
 
 import styles from './styles'
 
@@ -24,6 +26,8 @@ class MainContainer extends Component {
 
         <Router>
           <Switch>
+            <Route exact path='/' component={CardListContainer} />
+            <Route exact path='/cards/:cardId' component={CardDetailContainer} />
             <Route component={NotFound} />
           </Switch>
         </Router>

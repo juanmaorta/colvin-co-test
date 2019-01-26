@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardList snapshots should match for CardList component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WithStyles(CardList)
+    cards={
+        Array [
+            Object {
+              "id": 1,
+              "text": "Goldfinger: He's the man, the man with...",
+            },
+            Object {
+              "id": 2,
+              "text": "Instead of coal, Santa now gives the bad children...",
+            },
+            Object {
+              "id": 3,
+              "text": "Knock knock. Who's there?",
+            },
+          ]
+    }
+    classes={Object {}}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "cards": Array [
+        Object {
+          "id": 1,
+          "text": "Goldfinger: He's the man, the man with...",
+        },
+        Object {
+          "id": 2,
+          "text": "Instead of coal, Santa now gives the bad children...",
+        },
+        Object {
+          "id": 3,
+          "text": "Knock knock. Who's there?",
+        },
+      ],
+      "classes": Object {
+        "appBar": "CardList-appBar-1",
+        "blackBackGround": "CardList-blackBackGround-5",
+        "blackCardContent": "CardList-blackCardContent-6",
+        "blackCardTitle": "CardList-blackCardTitle-3",
+        "buttons": "CardList-buttons-2",
+        "card": "CardList-card-4",
+        "footer": "CardList-footer-7",
+        "heroButtons": "CardList-heroButtons-10",
+        "heroContent": "CardList-heroContent-9",
+        "heroUnit": "CardList-heroUnit-8",
+      },
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "cards": Array [
+          Object {
+            "id": 1,
+            "text": "Goldfinger: He's the man, the man with...",
+          },
+          Object {
+            "id": 2,
+            "text": "Instead of coal, Santa now gives the bad children...",
+          },
+          Object {
+            "id": 3,
+            "text": "Knock knock. Who's there?",
+          },
+        ],
+        "classes": Object {
+          "appBar": "CardList-appBar-1",
+          "blackBackGround": "CardList-blackBackGround-5",
+          "blackCardContent": "CardList-blackCardContent-6",
+          "blackCardTitle": "CardList-blackCardTitle-3",
+          "buttons": "CardList-buttons-2",
+          "card": "CardList-card-4",
+          "footer": "CardList-footer-7",
+          "heroButtons": "CardList-heroButtons-10",
+          "heroContent": "CardList-heroContent-9",
+          "heroUnit": "CardList-heroUnit-8",
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

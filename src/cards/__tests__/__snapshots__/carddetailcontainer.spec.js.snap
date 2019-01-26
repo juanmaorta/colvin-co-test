@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound snapshots should match for NotFound component 1`] = `
+exports[`CardDetailContainer snapshots should match for CardDetailContainer component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(NotFound)
+  Symbol(enzyme.__unrendered__): <WithStyles(CardDetailContainer)
     classes={Object {}}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -21,16 +21,16 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "classes": Object {
-        "appBar": "NotFound-appBar-1",
-        "blackBackGround": "NotFound-blackBackGround-5",
-        "blackCardContent": "NotFound-blackCardContent-6",
-        "blackCardTitle": "NotFound-blackCardTitle-3",
-        "buttons": "NotFound-buttons-2",
-        "card": "NotFound-card-4",
-        "footer": "NotFound-footer-7",
-        "heroButtons": "NotFound-heroButtons-10",
-        "heroContent": "NotFound-heroContent-9",
-        "heroUnit": "NotFound-heroUnit-8",
+        "appBar": "CardDetailContainer-appBar-1",
+        "blackBackGround": "CardDetailContainer-blackBackGround-5",
+        "blackCardContent": "CardDetailContainer-blackCardContent-6",
+        "blackCardTitle": "CardDetailContainer-blackCardTitle-3",
+        "buttons": "CardDetailContainer-buttons-2",
+        "card": "CardDetailContainer-card-4",
+        "footer": "CardDetailContainer-footer-7",
+        "heroButtons": "CardDetailContainer-heroButtons-10",
+        "heroContent": "CardDetailContainer-heroContent-9",
+        "heroUnit": "CardDetailContainer-heroUnit-8",
       },
     },
     "ref": null,
@@ -44,16 +44,16 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "classes": Object {
-          "appBar": "NotFound-appBar-1",
-          "blackBackGround": "NotFound-blackBackGround-5",
-          "blackCardContent": "NotFound-blackCardContent-6",
-          "blackCardTitle": "NotFound-blackCardTitle-3",
-          "buttons": "NotFound-buttons-2",
-          "card": "NotFound-card-4",
-          "footer": "NotFound-footer-7",
-          "heroButtons": "NotFound-heroButtons-10",
-          "heroContent": "NotFound-heroContent-9",
-          "heroUnit": "NotFound-heroUnit-8",
+          "appBar": "CardDetailContainer-appBar-1",
+          "blackBackGround": "CardDetailContainer-blackBackGround-5",
+          "blackCardContent": "CardDetailContainer-blackCardContent-6",
+          "blackCardTitle": "CardDetailContainer-blackCardTitle-3",
+          "buttons": "CardDetailContainer-buttons-2",
+          "card": "CardDetailContainer-card-4",
+          "footer": "CardDetailContainer-footer-7",
+          "heroButtons": "CardDetailContainer-heroButtons-10",
+          "heroContent": "CardDetailContainer-heroContent-9",
+          "heroUnit": "CardDetailContainer-heroUnit-8",
         },
       },
       "ref": null,
