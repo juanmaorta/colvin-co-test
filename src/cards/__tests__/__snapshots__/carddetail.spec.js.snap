@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDetail snapshots should match for CardDetail component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WithStyles(CardDetail)
+    card={
+        Object {
+            "id": 1,
+            "text": "Goldfinger: He's the man, the man with...",
+          }
+    }
+    classes={Object {}}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "card": Object {
+        "id": 1,
+        "text": "Goldfinger: He's the man, the man with...",
+      },
+      "classes": Object {
+        "appBar": "CardDetail-appBar-1",
+        "blackBackGround": "CardDetail-blackBackGround-5",
+        "blackCardContent": "CardDetail-blackCardContent-6",
+        "blackCardTitle": "CardDetail-blackCardTitle-3",
+        "buttons": "CardDetail-buttons-2",
+        "card": "CardDetail-card-4",
+        "cardGrid": "CardDetail-cardGrid-12",
+        "footer": "CardDetail-footer-7",
+        "heroButtons": "CardDetail-heroButtons-10",
+        "heroContent": "CardDetail-heroContent-9",
+        "heroUnit": "CardDetail-heroUnit-8",
+        "layout": "CardDetail-layout-11",
+      },
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "card": Object {
+          "id": 1,
+          "text": "Goldfinger: He's the man, the man with...",
+        },
+        "classes": Object {
+          "appBar": "CardDetail-appBar-1",
+          "blackBackGround": "CardDetail-blackBackGround-5",
+          "blackCardContent": "CardDetail-blackCardContent-6",
+          "blackCardTitle": "CardDetail-blackCardTitle-3",
+          "buttons": "CardDetail-buttons-2",
+          "card": "CardDetail-card-4",
+          "cardGrid": "CardDetail-cardGrid-12",
+          "footer": "CardDetail-footer-7",
+          "heroButtons": "CardDetail-heroButtons-10",
+          "heroContent": "CardDetail-heroContent-9",
+          "heroUnit": "CardDetail-heroUnit-8",
+          "layout": "CardDetail-layout-11",
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
