@@ -6,8 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <WithStyles(BlackCard)
     card={
         Object {
-            "id": 1,
-            "text": "Goldfinger: He's the man, the man with...",
+            "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+            "text": "GoldFinger: He's the man, the man with...",
           }
     }
     classes={Object {}}
@@ -30,8 +30,8 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "card": Object {
-        "id": 1,
-        "text": "Goldfinger: He's the man, the man with...",
+        "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+        "text": "GoldFinger: He's the man, the man with...",
       },
       "classes": Object {
         "appBar": "BlackCard-appBar-1",
@@ -62,8 +62,8 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "card": Object {
-          "id": 1,
-          "text": "Goldfinger: He's the man, the man with...",
+          "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+          "text": "GoldFinger: He's the man, the man with...",
         },
         "classes": Object {
           "appBar": "BlackCard-appBar-1",

@@ -7,15 +7,15 @@ ShallowWrapper {
     cards={
         Array [
             Object {
-              "id": 1,
-              "text": "Goldfinger: He's the man, the man with...",
+              "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+              "text": "GoldFinger: He's the man, the man with...",
             },
             Object {
-              "id": 2,
+              "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
               "text": "Instead of coal, Santa now gives the bad children...",
             },
             Object {
-              "id": 3,
+              "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
               "text": "Knock knock. Who's there?",
             },
           ]
@@ -40,8 +40,8 @@ ShallowWrapper {
         <WithStyles(BlackCard)
           card={
                     Object {
-                              "id": 1,
-                              "text": "Goldfinger: He's the man, the man with...",
+                              "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                              "text": "GoldFinger: He's the man, the man with...",
                             }
           }
           editable={true}
@@ -51,7 +51,7 @@ ShallowWrapper {
         <WithStyles(BlackCard)
           card={
                     Object {
-                              "id": 2,
+                              "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
                               "text": "Instead of coal, Santa now gives the bad children...",
                             }
           }
@@ -62,7 +62,7 @@ ShallowWrapper {
         <WithStyles(BlackCard)
           card={
                     Object {
-                              "id": 3,
+                              "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                               "text": "Knock knock. Who's there?",
                             }
           }
@@ -82,8 +82,8 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "card": Object {
-            "id": 1,
-            "text": "Goldfinger: He's the man, the man with...",
+            "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+            "text": "GoldFinger: He's the man, the man with...",
           },
           "editable": true,
           "handleDelete": undefined,
@@ -99,7 +99,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "card": Object {
-            "id": 2,
+            "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
             "text": "Instead of coal, Santa now gives the bad children...",
           },
           "editable": true,
@@ -116,7 +116,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "card": Object {
-            "id": 3,
+            "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
             "text": "Knock knock. Who's there?",
           },
           "editable": true,
@@ -140,8 +140,8 @@ ShallowWrapper {
           <WithStyles(BlackCard)
             card={
                         Object {
-                                    "id": 1,
-                                    "text": "Goldfinger: He's the man, the man with...",
+                                    "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                                    "text": "GoldFinger: He's the man, the man with...",
                                   }
             }
             editable={true}
@@ -151,7 +151,7 @@ ShallowWrapper {
           <WithStyles(BlackCard)
             card={
                         Object {
-                                    "id": 2,
+                                    "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
                                     "text": "Instead of coal, Santa now gives the bad children...",
                                   }
             }
@@ -162,7 +162,7 @@ ShallowWrapper {
           <WithStyles(BlackCard)
             card={
                         Object {
-                                    "id": 3,
+                                    "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                                     "text": "Knock knock. Who's there?",
                                   }
             }
@@ -182,8 +182,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "card": Object {
-              "id": 1,
-              "text": "Goldfinger: He's the man, the man with...",
+              "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+              "text": "GoldFinger: He's the man, the man with...",
             },
             "editable": true,
             "handleDelete": undefined,
@@ -199,7 +199,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "card": Object {
-              "id": 2,
+              "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
               "text": "Instead of coal, Santa now gives the bad children...",
             },
             "editable": true,
@@ -216,7 +216,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "card": Object {
-              "id": 3,
+              "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
               "text": "Knock knock. Who's there?",
             },
             "editable": true,

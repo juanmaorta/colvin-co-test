@@ -8,7 +8,7 @@ import CardDetail from './components/CardDetail'
 import styles from '../styles'
 
 export const searchCard = (cardList, id) => {
-  return find(cardList, { id: parseInt(id, 10) })
+  return find(cardList, { id: id })
 }
 
 const mapStateToProps = (state) => ({
