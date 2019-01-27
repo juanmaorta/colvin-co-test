@@ -21,6 +21,8 @@ ShallowWrapper {
           ]
     }
     classes={Object {}}
+    deleteCard={[Function]}
+    editCard={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -62,13 +64,14 @@ ShallowWrapper {
                               },
                             ]
           }
-          deleteCard={undefined}
+          deleteCard={[Function]}
+          editCard={[Function]}
 />,
         <div
           className={undefined}
 >
           <WithStyles(Button)
-                    onClick={[Function]}
+                    onClick={undefined}
                     variant="contained"
           >
                     Add a black card
@@ -113,7 +116,8 @@ ShallowWrapper {
               "text": "Knock knock. Who's there?",
             },
           ],
-          "deleteCard": undefined,
+          "deleteCard": [Function],
+          "editCard": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -125,7 +129,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <WithStyles(Button)
-            onClick={[Function]}
+            onClick={undefined}
             variant="contained"
 >
             Add a black card
@@ -139,7 +143,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "Add a black card",
-            "onClick": [Function],
+            "onClick": undefined,
             "variant": "contained",
           },
           "ref": null,
@@ -183,13 +187,14 @@ ShallowWrapper {
                                     },
                                   ]
             }
-            deleteCard={undefined}
+            deleteCard={[Function]}
+            editCard={[Function]}
 />,
           <div
             className={undefined}
 >
             <WithStyles(Button)
-                        onClick={[Function]}
+                        onClick={undefined}
                         variant="contained"
             >
                         Add a black card
@@ -234,7 +239,8 @@ ShallowWrapper {
                 "text": "Knock knock. Who's there?",
               },
             ],
-            "deleteCard": undefined,
+            "deleteCard": [Function],
+            "editCard": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -246,7 +252,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <WithStyles(Button)
-              onClick={[Function]}
+              onClick={undefined}
               variant="contained"
 >
               Add a black card
@@ -260,7 +266,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Add a black card",
-              "onClick": [Function],
+              "onClick": undefined,
               "variant": "contained",
             },
             "ref": null,

@@ -11,6 +11,8 @@ describe('CardListContainer snapshots', () => {
       <CardListContainer
         classes={stubs.classes}
         cards={stubs.cards}
+        deleteCard={jest.fn}
+        editCard={jest.fn}
       />
     )
     expect(wrapper).toMatchSnapshot()
