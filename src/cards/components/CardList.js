@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Grid from '@material-ui/core/Grid'
-import CardActions from '@material-ui/core/CardActions'
-import Button from '@material-ui/core/Button'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import Typography from '@material-ui/core/Typography'
-import { withStyles } from '@material-ui/core/styles'
 
-import styles from '../../styles'
+import BlackCard from './BlackCard'
 
 class CardList extends Component {
   editCard = (cardId) => {
@@ -21,33 +15,20 @@ class CardList extends Component {
 
   render () {
     const {
-      cards,
-      classes
+      cards
     } = this.props
 
     return (
       <Grid container spacing={40}>
         {cards.map((card, idx) => {
           return (
-            <Grid item key={idx} sm={6} md={4} lg={3}>
-              <Card className={classes.card}>
-                <CardContent className={classes.blackCardContent}>
-                  <Typography gutterBottom variant='h5' component='h2' className={classes.blackCardTitle}>{card.text}</Typography>
-                </CardContent>
-                <CardActions className={classes.blackBackGround}>
-                  <Button size='small' color='primary' href={`cards/${card.id}`}>
-                  View
-                  </Button>
-                  <Button size='small' color='primary' onClick={() => this.editCard(card.id)}>
-                  Edit
-                  </Button>
-
-                  <Button size='small' color='secondary' onClick={() => this.deleteCard(card.id)}>
-                  Delete
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
+            <BlackCard
+              card={card}
+              key={idx}
+              editable
+              handleDelete={this.deleteCard}
+              handleEdit={this.editCard}
+            />
           )
         })}
       </Grid>
@@ -56,7 +37,7 @@ class CardList extends Component {
 }
 
 CardList.propTypes = {
-  classes: PropTypes.object.isRequired
+  cards: PropTypes.array.isRequired
 }
 
-export default withStyles(styles)(CardList)
+export default CardList

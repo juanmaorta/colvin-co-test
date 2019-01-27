@@ -1,31 +1,41 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Button from '@material-ui/core/Button'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
+import { find } from 'lodash/collection'
 import { withStyles } from '@material-ui/core/styles'
 
+import CardDetail from './components/CardDetail'
+import { cards } from '../mocks/cards'
 import styles from '../styles'
 
-const CardDetailContainer = (props) => {
-  const { classes } = props
+class CardDetailContainer extends Component {
+  constructor (props) {
+    super(props)
+    const cardId = props.match.params.cardId
+    const card = this.searchCard(cardId)
 
-  return (
-    <div className={classes.heroUnit}>
-      <div className={classes.heroContent}>
-        <Typography variant='h6' align='center' color='textSecondary' paragraph>
-          The dummy card detail container
-        </Typography>
-        <div className={classes.heroButtons}>
-          <Grid container spacing={16} justify='center'>
-            <Grid item>
-              <Button variant='contained' color='primary' href='/'>Home</Button>
-            </Grid>
-          </Grid>
+    this.state = {
+      card
+    }
+  }
+
+  searchCard = (id) => {
+    return find(cards, { id: parseInt(id, 10) })
+  }
+
+  render () {
+    const { classes } = this.props
+    const { card } = this.state
+
+    return (
+      <div className={classes.heroUnit}>
+        <div className={classes.heroContent}>
+          <CardDetail
+            card={card}
+          />
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 CardDetailContainer.propTypes = {

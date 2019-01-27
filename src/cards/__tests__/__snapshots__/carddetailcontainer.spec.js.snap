@@ -18,7 +18,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "classes": Object {
         "appBar": "CardDetailContainer-appBar-1",
@@ -27,10 +27,12 @@ ShallowWrapper {
         "blackCardTitle": "CardDetailContainer-blackCardTitle-3",
         "buttons": "CardDetailContainer-buttons-2",
         "card": "CardDetailContainer-card-4",
+        "cardGrid": "CardDetailContainer-cardGrid-12",
         "footer": "CardDetailContainer-footer-7",
         "heroButtons": "CardDetailContainer-heroButtons-10",
         "heroContent": "CardDetailContainer-heroContent-9",
         "heroUnit": "CardDetailContainer-heroUnit-8",
+        "layout": "CardDetailContainer-layout-11",
       },
     },
     "ref": null,
@@ -41,7 +43,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "classes": Object {
           "appBar": "CardDetailContainer-appBar-1",
@@ -50,10 +52,12 @@ ShallowWrapper {
           "blackCardTitle": "CardDetailContainer-blackCardTitle-3",
           "buttons": "CardDetailContainer-buttons-2",
           "card": "CardDetailContainer-card-4",
+          "cardGrid": "CardDetailContainer-cardGrid-12",
           "footer": "CardDetailContainer-footer-7",
           "heroButtons": "CardDetailContainer-heroButtons-10",
           "heroContent": "CardDetailContainer-heroContent-9",
           "heroUnit": "CardDetailContainer-heroUnit-8",
+          "layout": "CardDetailContainer-layout-11",
         },
       },
       "ref": null,

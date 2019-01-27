@@ -3,7 +3,7 @@
 exports[`CardList snapshots should match for CardList component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(CardList)
+  Symbol(enzyme.__unrendered__): <CardList
     cards={
         Array [
             Object {
@@ -36,35 +36,98 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "cards": Array [
-        Object {
-          "id": 1,
-          "text": "Goldfinger: He's the man, the man with...",
-        },
-        Object {
-          "id": 2,
-          "text": "Instead of coal, Santa now gives the bad children...",
-        },
-        Object {
-          "id": 3,
-          "text": "Knock knock. Who's there?",
-        },
+      "children": Array [
+        <WithStyles(BlackCard)
+          card={
+                    Object {
+                              "id": 1,
+                              "text": "Goldfinger: He's the man, the man with...",
+                            }
+          }
+          editable={true}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
+/>,
+        <WithStyles(BlackCard)
+          card={
+                    Object {
+                              "id": 2,
+                              "text": "Instead of coal, Santa now gives the bad children...",
+                            }
+          }
+          editable={true}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
+/>,
+        <WithStyles(BlackCard)
+          card={
+                    Object {
+                              "id": 3,
+                              "text": "Knock knock. Who's there?",
+                            }
+          }
+          editable={true}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
+/>,
       ],
-      "classes": Object {
-        "appBar": "CardList-appBar-1",
-        "blackBackGround": "CardList-blackBackGround-5",
-        "blackCardContent": "CardList-blackCardContent-6",
-        "blackCardTitle": "CardList-blackCardTitle-3",
-        "buttons": "CardList-buttons-2",
-        "card": "CardList-card-4",
-        "footer": "CardList-footer-7",
-        "heroButtons": "CardList-heroButtons-10",
-        "heroContent": "CardList-heroContent-9",
-        "heroUnit": "CardList-heroUnit-8",
-      },
+      "container": true,
+      "spacing": 40,
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "class",
+        "props": Object {
+          "card": Object {
+            "id": 1,
+            "text": "Goldfinger: He's the man, the man with...",
+          },
+          "editable": true,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "card": Object {
+            "id": 2,
+            "text": "Instead of coal, Santa now gives the bad children...",
+          },
+          "editable": true,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "card": Object {
+            "id": 3,
+            "text": "Knock knock. Who's there?",
+          },
+          "editable": true,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -73,35 +136,98 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "cards": Array [
-          Object {
-            "id": 1,
-            "text": "Goldfinger: He's the man, the man with...",
-          },
-          Object {
-            "id": 2,
-            "text": "Instead of coal, Santa now gives the bad children...",
-          },
-          Object {
-            "id": 3,
-            "text": "Knock knock. Who's there?",
-          },
+        "children": Array [
+          <WithStyles(BlackCard)
+            card={
+                        Object {
+                                    "id": 1,
+                                    "text": "Goldfinger: He's the man, the man with...",
+                                  }
+            }
+            editable={true}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
+/>,
+          <WithStyles(BlackCard)
+            card={
+                        Object {
+                                    "id": 2,
+                                    "text": "Instead of coal, Santa now gives the bad children...",
+                                  }
+            }
+            editable={true}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
+/>,
+          <WithStyles(BlackCard)
+            card={
+                        Object {
+                                    "id": 3,
+                                    "text": "Knock knock. Who's there?",
+                                  }
+            }
+            editable={true}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
+/>,
         ],
-        "classes": Object {
-          "appBar": "CardList-appBar-1",
-          "blackBackGround": "CardList-blackBackGround-5",
-          "blackCardContent": "CardList-blackCardContent-6",
-          "blackCardTitle": "CardList-blackCardTitle-3",
-          "buttons": "CardList-buttons-2",
-          "card": "CardList-card-4",
-          "footer": "CardList-footer-7",
-          "heroButtons": "CardList-heroButtons-10",
-          "heroContent": "CardList-heroContent-9",
-          "heroUnit": "CardList-heroUnit-8",
-        },
+        "container": true,
+        "spacing": 40,
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "card": Object {
+              "id": 1,
+              "text": "Goldfinger: He's the man, the man with...",
+            },
+            "editable": true,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "card": Object {
+              "id": 2,
+              "text": "Instead of coal, Santa now gives the bad children...",
+            },
+            "editable": true,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "card": Object {
+              "id": 3,
+              "text": "Knock knock. Who's there?",
+            },
+            "editable": true,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
