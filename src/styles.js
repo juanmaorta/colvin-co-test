@@ -53,6 +53,10 @@ const styles = theme => ({
   },
   cardGrid: {
     padding: `${theme.spacing.unit * 8}px 0`
+  },
+  whiteTextField: {
+    backgroundColor: 'white',
+    width: '100%'
   }
 })
 

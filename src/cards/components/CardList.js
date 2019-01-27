@@ -5,14 +5,11 @@ import Grid from '@material-ui/core/Grid'
 import BlackCard from './BlackCard'
 
 class CardList extends Component {
-  editCard = (cardId) => {
-    console.log(`editing card ${cardId}`)
-  }
-
   render () {
     const {
       cards,
-      deleteCard
+      deleteCard,
+      editCard
     } = this.props
 
     return (
@@ -24,7 +21,7 @@ class CardList extends Component {
               key={idx}
               editable
               handleDelete={deleteCard}
-              handleEdit={this.editCard}
+              handleEdit={editCard}
             />
           )
         })}
@@ -35,7 +32,8 @@ class CardList extends Component {
 
 CardList.propTypes = {
   cards: PropTypes.array.isRequired,
-  deleteCard: PropTypes.func
+  deleteCard: PropTypes.func,
+  editCard: PropTypes.func
 }
 
 export default CardList

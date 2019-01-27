@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
 import CardList from './components/CardList'
-import { deleteCard } from './actions'
+import { deleteCard, editCard } from './actions'
 import styles from '../styles'
 
 const mapStateToProps = (state) => ({
@@ -16,19 +16,20 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   deleteCard: (cardId) => {
     return dispatch(deleteCard(cardId))
+  },
+  editCard: (card) => {
+    return dispatch(editCard(card))
   }
 })
 
 export class CardListContainer extends Component {
-  addBlackCard = () => {
-    console.log('add a black card')
-  }
-
   render () {
     const {
+      addCard,
       cards,
       classes,
-      deleteCard
+      deleteCard,
+      editCard
     } = this.props
 
     return (
@@ -39,9 +40,10 @@ export class CardListContainer extends Component {
         <CardList
           cards={cards}
           deleteCard={deleteCard}
+          editCard={editCard}
         />
         <div className={classes.buttons}>
-          <Button variant='contained' onClick={this.addBlackCard}>Add a black card</Button>
+          <Button variant='contained' onClick={addCard}>Add a black card</Button>
         </div>
       </div>
     )

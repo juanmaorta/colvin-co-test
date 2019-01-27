@@ -1,48 +1,102 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Grid from '@material-ui/core/Grid'
+import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
 
 import { withStyles } from '@material-ui/core/styles'
 
 import styles from '../../styles'
 
-const BlackCard = (props) => {
-  const {
-    card,
-    classes,
-    editable,
-    handleDelete,
-    handleEdit
-  } = props
+class BlackCard extends Component {
+  constructor (props) {
+    super(props)
 
-  return (
-    <Grid item sm={6} md={4} lg={3}>
-      <Card className={classes.card}>
-        <CardContent className={classes.blackCardContent}>
-          <Typography gutterBottom variant='h5' component='h2' className={classes.blackCardTitle}>{card.text}</Typography>
-        </CardContent>
-        {editable &&
-          <CardActions className={classes.blackBackGround}>
-            <Button size='small' color='primary' href={`cards/${card.id}`}>
-            View
-            </Button>
-            <Button size='small' color='primary' onClick={() => handleEdit(card.id)}>
-            Edit
-            </Button>
+    this.state = {
+      isEditing: this.props.isEditing,
+      text: this.props.card.text
+    }
+  }
 
-            <Button size='small' color='secondary' onClick={() => handleDelete(card.id)}>
-            Delete
-            </Button>
-          </CardActions>
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value
+    })
+    // capture return key
+  }
+
+  toggleEdit = () => {
+    if (this.state.isEditing) {
+      this.props.handleEdit(
+        {
+          id: this.props.card.id,
+          text: this.state.text,
+          whiteCards: this.props.card.whiteCards
         }
-      </Card>
-    </Grid>
-  )
+      )
+    }
+    this.setState({
+      isEditing: !this.state.isEditing
+    })
+  }
+
+  UNSAFE_componentWillReceiveProps (newProps) {
+    if (newProps.card.text !== this.state.text) {
+      this.setState({
+        text: newProps.card.text
+      })
+    }
+  }
+
+  render () {
+    const {
+      card,
+      classes,
+      editable,
+      handleDelete
+    } = this.props
+
+    return (
+      <Grid item sm={6} md={4} lg={3}>
+        <Card className={classes.card}>
+          <CardContent className={classes.blackCardContent}>
+            {!this.state.isEditing &&
+              <Typography gutterBottom variant='h5' component='h2' className={classes.blackCardTitle}>{this.state.text}</Typography>
+            }
+            {this.state.isEditing &&
+              <TextField
+                id='text'
+                label='text'
+                className={classes.whiteTextField}
+                value={this.state.text}
+                onChange={this.handleChange('text')}
+                onBlur={this.toggleEdit}
+                margin='normal'
+              />
+            }
+          </CardContent>
+          {editable &&
+            <CardActions className={classes.blackBackGround}>
+              <Button size='small' color='primary' href={`cards/${card.id}`}>
+              View
+              </Button>
+              <Button size='small' color='primary' onClick={this.toggleEdit}>
+              Edit
+              </Button>
+
+              <Button size='small' color='secondary' onClick={() => handleDelete(card.id)}>
+              Delete
+              </Button>
+            </CardActions>
+          }
+        </Card>
+      </Grid>
+    )
+  }
 }
 
 BlackCard.propTypes = {
@@ -54,7 +108,8 @@ BlackCard.propTypes = {
 }
 
 BlackCard.defaultProps = {
-  editable: false
+  editable: false,
+  isEditing: false
 }
 
 export default withStyles(styles)(BlackCard)
