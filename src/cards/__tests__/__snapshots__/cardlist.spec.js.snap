@@ -45,7 +45,7 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={[Function]}
+          handleDelete={undefined}
           handleEdit={[Function]}
 />,
         <WithStyles(BlackCard)
@@ -56,7 +56,7 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={[Function]}
+          handleDelete={undefined}
           handleEdit={[Function]}
 />,
         <WithStyles(BlackCard)
@@ -67,7 +67,7 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={[Function]}
+          handleDelete={undefined}
           handleEdit={[Function]}
 />,
       ],
@@ -86,7 +86,7 @@ ShallowWrapper {
             "text": "Goldfinger: He's the man, the man with...",
           },
           "editable": true,
-          "handleDelete": [Function],
+          "handleDelete": undefined,
           "handleEdit": [Function],
         },
         "ref": null,
@@ -103,7 +103,7 @@ ShallowWrapper {
             "text": "Instead of coal, Santa now gives the bad children...",
           },
           "editable": true,
-          "handleDelete": [Function],
+          "handleDelete": undefined,
           "handleEdit": [Function],
         },
         "ref": null,
@@ -120,7 +120,7 @@ ShallowWrapper {
             "text": "Knock knock. Who's there?",
           },
           "editable": true,
-          "handleDelete": [Function],
+          "handleDelete": undefined,
           "handleEdit": [Function],
         },
         "ref": null,
@@ -145,7 +145,7 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={[Function]}
+            handleDelete={undefined}
             handleEdit={[Function]}
 />,
           <WithStyles(BlackCard)
@@ -156,7 +156,7 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={[Function]}
+            handleDelete={undefined}
             handleEdit={[Function]}
 />,
           <WithStyles(BlackCard)
@@ -167,7 +167,7 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={[Function]}
+            handleDelete={undefined}
             handleEdit={[Function]}
 />,
         ],
@@ -186,7 +186,7 @@ ShallowWrapper {
               "text": "Goldfinger: He's the man, the man with...",
             },
             "editable": true,
-            "handleDelete": [Function],
+            "handleDelete": undefined,
             "handleEdit": [Function],
           },
           "ref": null,
@@ -203,7 +203,7 @@ ShallowWrapper {
               "text": "Instead of coal, Santa now gives the bad children...",
             },
             "editable": true,
-            "handleDelete": [Function],
+            "handleDelete": undefined,
             "handleEdit": [Function],
           },
           "ref": null,
@@ -220,7 +220,7 @@ ShallowWrapper {
               "text": "Knock knock. Who's there?",
             },
             "editable": true,
-            "handleDelete": [Function],
+            "handleDelete": undefined,
             "handleEdit": [Function],
           },
           "ref": null,

@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Provider } from 'react-redux'
 
 import MainContainer from './MainContainer'
 
-export default class App extends Component {
-  render () {
-    return (
-      <MainContainer />
-    )
-  }
-}
+const App = ({ store }) => (
+  <Provider store={store}>
+    <MainContainer />
+  </Provider>
+)
+
+export default App

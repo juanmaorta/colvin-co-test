@@ -1,7 +1,7 @@
 export const cards = [
   {
     id: 1,
-    text: 'Goldfinger: He\'s the man, the man with...',
+    text: 'GoldFinger: He\'s the man, the man with...',
     whiteCards: [
       {
         id: 4,

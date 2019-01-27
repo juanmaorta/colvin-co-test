@@ -3,7 +3,23 @@
 exports[`CardListContainer snapshots should match for CardListContainer component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(CardListContainer)
+  Symbol(enzyme.__unrendered__): <CardListContainer
+    cards={
+        Array [
+            Object {
+              "id": 1,
+              "text": "Goldfinger: He's the man, the man with...",
+            },
+            Object {
+              "id": 2,
+              "text": "Instead of coal, Santa now gives the bad children...",
+            },
+            Object {
+              "id": 3,
+              "text": "Knock knock. Who's there?",
+            },
+          ]
+    }
     classes={Object {}}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -18,51 +34,243 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "classes": Object {
-        "appBar": "CardListContainer-appBar-1",
-        "blackBackGround": "CardListContainer-blackBackGround-5",
-        "blackCardContent": "CardListContainer-blackCardContent-6",
-        "blackCardTitle": "CardListContainer-blackCardTitle-3",
-        "buttons": "CardListContainer-buttons-2",
-        "card": "CardListContainer-card-4",
-        "cardGrid": "CardListContainer-cardGrid-12",
-        "footer": "CardListContainer-footer-7",
-        "heroButtons": "CardListContainer-heroButtons-10",
-        "heroContent": "CardListContainer-heroContent-9",
-        "heroUnit": "CardListContainer-heroUnit-8",
-        "layout": "CardListContainer-layout-11",
-      },
+      "children": Array [
+        <WithStyles(Typography)
+          align="center"
+          color="textPrimary"
+          gutterBottom={true}
+          variant="h4"
+>
+          Choose your black card
+</WithStyles(Typography)>,
+        <CardList
+          cards={
+                    Array [
+                              Object {
+                                "id": 1,
+                                "text": "Goldfinger: He's the man, the man with...",
+                              },
+                              Object {
+                                "id": 2,
+                                "text": "Instead of coal, Santa now gives the bad children...",
+                              },
+                              Object {
+                                "id": 3,
+                                "text": "Knock knock. Who's there?",
+                              },
+                            ]
+          }
+          deleteCard={undefined}
+/>,
+        <div
+          className={undefined}
+>
+          <WithStyles(Button)
+                    onClick={[Function]}
+                    variant="contained"
+          >
+                    Add a black card
+          </WithStyles(Button)>
+</div>,
+      ],
+      "className": undefined,
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "align": "center",
+          "children": "Choose your black card",
+          "color": "textPrimary",
+          "gutterBottom": true,
+          "variant": "h4",
+        },
+        "ref": null,
+        "rendered": "Choose your black card",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "cards": Array [
+            Object {
+              "id": 1,
+              "text": "Goldfinger: He's the man, the man with...",
+            },
+            Object {
+              "id": 2,
+              "text": "Instead of coal, Santa now gives the bad children...",
+            },
+            Object {
+              "id": 3,
+              "text": "Knock knock. Who's there?",
+            },
+          ],
+          "deleteCard": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <WithStyles(Button)
+            onClick={[Function]}
+            variant="contained"
+>
+            Add a black card
+</WithStyles(Button)>,
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add a black card",
+            "onClick": [Function],
+            "variant": "contained",
+          },
+          "ref": null,
+          "rendered": "Add a black card",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "classes": Object {
-          "appBar": "CardListContainer-appBar-1",
-          "blackBackGround": "CardListContainer-blackBackGround-5",
-          "blackCardContent": "CardListContainer-blackCardContent-6",
-          "blackCardTitle": "CardListContainer-blackCardTitle-3",
-          "buttons": "CardListContainer-buttons-2",
-          "card": "CardListContainer-card-4",
-          "cardGrid": "CardListContainer-cardGrid-12",
-          "footer": "CardListContainer-footer-7",
-          "heroButtons": "CardListContainer-heroButtons-10",
-          "heroContent": "CardListContainer-heroContent-9",
-          "heroUnit": "CardListContainer-heroUnit-8",
-          "layout": "CardListContainer-layout-11",
-        },
+        "children": Array [
+          <WithStyles(Typography)
+            align="center"
+            color="textPrimary"
+            gutterBottom={true}
+            variant="h4"
+>
+            Choose your black card
+</WithStyles(Typography)>,
+          <CardList
+            cards={
+                        Array [
+                                    Object {
+                                      "id": 1,
+                                      "text": "Goldfinger: He's the man, the man with...",
+                                    },
+                                    Object {
+                                      "id": 2,
+                                      "text": "Instead of coal, Santa now gives the bad children...",
+                                    },
+                                    Object {
+                                      "id": 3,
+                                      "text": "Knock knock. Who's there?",
+                                    },
+                                  ]
+            }
+            deleteCard={undefined}
+/>,
+          <div
+            className={undefined}
+>
+            <WithStyles(Button)
+                        onClick={[Function]}
+                        variant="contained"
+            >
+                        Add a black card
+            </WithStyles(Button)>
+</div>,
+        ],
+        "className": undefined,
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "align": "center",
+            "children": "Choose your black card",
+            "color": "textPrimary",
+            "gutterBottom": true,
+            "variant": "h4",
+          },
+          "ref": null,
+          "rendered": "Choose your black card",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "cards": Array [
+              Object {
+                "id": 1,
+                "text": "Goldfinger: He's the man, the man with...",
+              },
+              Object {
+                "id": 2,
+                "text": "Instead of coal, Santa now gives the bad children...",
+              },
+              Object {
+                "id": 3,
+                "text": "Knock knock. Who's there?",
+              },
+            ],
+            "deleteCard": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <WithStyles(Button)
+              onClick={[Function]}
+              variant="contained"
+>
+              Add a black card
+</WithStyles(Button)>,
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add a black card",
+              "onClick": [Function],
+              "variant": "contained",
+            },
+            "ref": null,
+            "rendered": "Add a black card",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

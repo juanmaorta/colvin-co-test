@@ -9,13 +9,10 @@ class CardList extends Component {
     console.log(`editing card ${cardId}`)
   }
 
-  deleteCard = (cardId) => {
-    console.log(`deleting card ${cardId}`)
-  }
-
   render () {
     const {
-      cards
+      cards,
+      deleteCard
     } = this.props
 
     return (
@@ -26,7 +23,7 @@ class CardList extends Component {
               card={card}
               key={idx}
               editable
-              handleDelete={this.deleteCard}
+              handleDelete={deleteCard}
               handleEdit={this.editCard}
             />
           )
@@ -37,7 +34,8 @@ class CardList extends Component {
 }
 
 CardList.propTypes = {
-  cards: PropTypes.array.isRequired
+  cards: PropTypes.array.isRequired,
+  deleteCard: PropTypes.func
 }
 
 export default CardList

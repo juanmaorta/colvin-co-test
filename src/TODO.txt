@@ -1,0 +1,5 @@
+- estados vacíos (cuando no hay cards)
+- use layout and grid
+- Flow or PropTypes
+- standard
+- deploy at netlify?

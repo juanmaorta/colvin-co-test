@@ -1,10 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardDetailContainer snapshots should match for CardDetailContainer component 1`] = `
+exports[`CardDetailContainer test suite CardDetailContainer snapshots should match for CardDetailContainer component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(CardDetailContainer)
+  Symbol(enzyme.__unrendered__): <CardDetailContainer
     classes={Object {}}
+    deleteCard={[Function]}
+    match={
+        Object {
+            "params": Object {
+              "cardId": 1,
+            },
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -18,51 +26,85 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "classes": Object {
-        "appBar": "CardDetailContainer-appBar-1",
-        "blackBackGround": "CardDetailContainer-blackBackGround-5",
-        "blackCardContent": "CardDetailContainer-blackCardContent-6",
-        "blackCardTitle": "CardDetailContainer-blackCardTitle-3",
-        "buttons": "CardDetailContainer-buttons-2",
-        "card": "CardDetailContainer-card-4",
-        "cardGrid": "CardDetailContainer-cardGrid-12",
-        "footer": "CardDetailContainer-footer-7",
-        "heroButtons": "CardDetailContainer-heroButtons-10",
-        "heroContent": "CardDetailContainer-heroContent-9",
-        "heroUnit": "CardDetailContainer-heroUnit-8",
-        "layout": "CardDetailContainer-layout-11",
-      },
+      "children": <div
+        className={undefined}
+>
+        <WithStyles(CardDetail)
+                card={undefined}
+        />
+</div>,
+      "className": undefined,
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <WithStyles(CardDetail)
+          card={undefined}
+/>,
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "card": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "classes": Object {
-          "appBar": "CardDetailContainer-appBar-1",
-          "blackBackGround": "CardDetailContainer-blackBackGround-5",
-          "blackCardContent": "CardDetailContainer-blackCardContent-6",
-          "blackCardTitle": "CardDetailContainer-blackCardTitle-3",
-          "buttons": "CardDetailContainer-buttons-2",
-          "card": "CardDetailContainer-card-4",
-          "cardGrid": "CardDetailContainer-cardGrid-12",
-          "footer": "CardDetailContainer-footer-7",
-          "heroButtons": "CardDetailContainer-heroButtons-10",
-          "heroContent": "CardDetailContainer-heroContent-9",
-          "heroUnit": "CardDetailContainer-heroUnit-8",
-          "layout": "CardDetailContainer-layout-11",
-        },
+        "children": <div
+          className={undefined}
+>
+          <WithStyles(CardDetail)
+                    card={undefined}
+          />
+</div>,
+        "className": undefined,
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <WithStyles(CardDetail)
+            card={undefined}
+/>,
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "card": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
