@@ -17,7 +17,7 @@ class BlackCard extends Component {
     super(props)
 
     this.state = {
-      isEditing: this.props.isEditing,
+      isEditing: this.props.card.isEditing || this.props.isEditing,
       text: this.props.card.text
     }
   }

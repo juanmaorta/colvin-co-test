@@ -34,7 +34,8 @@ export const cards = [
 export const generateRandomEmptyCard = () => {
   return {
     id: UUID.create().hex,
-    text: 'the text',
-    whiteCards: []
+    text: 'random text, please edit',
+    whiteCards: [],
+    isEditing: true
   }
 }

@@ -5,8 +5,13 @@ import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
+import { generateRandomEmptyCard } from '../mocks/cards'
 import CardList from './components/CardList'
-import { deleteCard, editCard } from './actions'
+import {
+  addCard,
+  deleteCard,
+  editCard
+} from './actions'
 import styles from '../styles'
 
 const mapStateToProps = (state) => ({
@@ -19,6 +24,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   editCard: (card) => {
     return dispatch(editCard(card))
+  },
+  addCard: (card) => {
+    return dispatch(addCard(generateRandomEmptyCard()))
   }
 })
 
