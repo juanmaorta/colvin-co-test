@@ -43,7 +43,12 @@ export class CardListContainer extends Component {
     return (
       <div className={classes.heroUnit}>
         <Typography variant='h4' align='center' color='textPrimary' gutterBottom>
-          Choose your black card
+          {cards.length > 0 &&
+            <span>Choose your black card</span>
+          }
+          {cards.length === 0 &&
+            <span>Press the button to add new cards</span>
+          }
         </Typography>
         <CardList
           cards={cards}

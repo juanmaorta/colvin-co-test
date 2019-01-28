@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
 import styles from '../../styles'
@@ -22,11 +23,16 @@ class CardDetail extends Component {
 
     return (
       <div className={classNames(classes.layout, classes.cardGrid)}>
-        <BlackCard
-          card={card}
-          editable={false}
-        />
         <Grid container spacing={40}>
+          <BlackCard
+            card={card}
+            editable={false}
+          />
+        </Grid>
+        <Grid container spacing={40}>
+          {card.whiteCards.length === 0 &&
+            <Typography gutterBottom variant='h5' component='h2'>no white cards yet</Typography>
+          }
           {card.whiteCards.map((wc, idx) => {
             return (
               <WhiteCard

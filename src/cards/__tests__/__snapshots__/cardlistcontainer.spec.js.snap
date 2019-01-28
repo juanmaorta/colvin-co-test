@@ -50,7 +50,9 @@ ShallowWrapper {
           gutterBottom={true}
           variant="h4"
 >
-          Choose your black card
+          <span>
+                    Choose your black card
+          </span>
 </WithStyles(Typography)>,
         <CardList
           cards={
@@ -98,13 +100,31 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "align": "center",
-          "children": "Choose your black card",
+          "children": Array [
+            <span>
+              Choose your black card
+</span>,
+            false,
+          ],
           "color": "textPrimary",
           "gutterBottom": true,
           "variant": "h4",
         },
         "ref": null,
-        "rendered": "Choose your black card",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Choose your black card",
+            },
+            "ref": null,
+            "rendered": "Choose your black card",
+            "type": "span",
+          },
+          false,
+        ],
         "type": [Function],
       },
       Object {
@@ -183,7 +203,9 @@ ShallowWrapper {
             gutterBottom={true}
             variant="h4"
 >
-            Choose your black card
+            <span>
+                        Choose your black card
+            </span>
 </WithStyles(Typography)>,
           <CardList
             cards={
@@ -231,13 +253,31 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "align": "center",
-            "children": "Choose your black card",
+            "children": Array [
+              <span>
+                Choose your black card
+</span>,
+              false,
+            ],
             "color": "textPrimary",
             "gutterBottom": true,
             "variant": "h4",
           },
           "ref": null,
-          "rendered": "Choose your black card",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Choose your black card",
+              },
+              "ref": null,
+              "rendered": "Choose your black card",
+              "type": "span",
+            },
+            false,
+          ],
           "type": [Function],
         },
         Object {
