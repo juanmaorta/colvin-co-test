@@ -11,20 +11,13 @@ import BlackCard from './BlackCard'
 import WhiteCard from './WhiteCard'
 
 class CardDetail extends Component {
-  deleteCard = (id) => {
-    console.log(`delete white card ${id}`)
-  }
-
-  editCard = (id) => {
-    console.log(`edit white card ${id}`)
-  }
-
-  addWhiteCard = () => {}
-
   render () {
     const {
       card,
-      classes
+      classes,
+      addCard,
+      deleteCard,
+      editCard
     } = this.props
 
     return (
@@ -38,15 +31,15 @@ class CardDetail extends Component {
             return (
               <WhiteCard
                 card={wc}
-                handleDelete={this.deleteCard}
-                handleEdit={this.editCard}
+                handleDelete={deleteCard}
+                handleEdit={editCard}
                 key={idx}
               />
             )
           })}
         </Grid>
         <div className={classes.buttons}>
-          <Button variant='contained' onClick={this.addWhiteCard}>Add a white card</Button>
+          <Button variant='contained' onClick={addCard}>Add a white card</Button>
         </div>
       </div>
     )

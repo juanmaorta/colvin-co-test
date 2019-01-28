@@ -18,6 +18,11 @@ ShallowWrapper {
               "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
               "text": "Knock knock. Who's there?",
             },
+            Object {
+              "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+              "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+              "text": "GoldFinger kid",
+            },
           ]
     }
     classes={Object {}}
@@ -64,6 +69,18 @@ ShallowWrapper {
                     Object {
                               "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                               "text": "Knock knock. Who's there?",
+                            }
+          }
+          editable={true}
+          handleDelete={undefined}
+          handleEdit={undefined}
+/>,
+        <WithStyles(BlackCard)
+          card={
+                    Object {
+                              "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+                              "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                              "text": "GoldFinger kid",
                             }
           }
           editable={true}
@@ -127,6 +144,24 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "class",
+        "props": Object {
+          "card": Object {
+            "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+            "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+            "text": "GoldFinger kid",
+          },
+          "editable": true,
+          "handleDelete": undefined,
+          "handleEdit": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -164,6 +199,18 @@ ShallowWrapper {
                         Object {
                                     "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                                     "text": "Knock knock. Who's there?",
+                                  }
+            }
+            editable={true}
+            handleDelete={undefined}
+            handleEdit={undefined}
+/>,
+          <WithStyles(BlackCard)
+            card={
+                        Object {
+                                    "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+                                    "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                                    "text": "GoldFinger kid",
                                   }
             }
             editable={true}
@@ -218,6 +265,24 @@ ShallowWrapper {
             "card": Object {
               "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
               "text": "Knock knock. Who's there?",
+            },
+            "editable": true,
+            "handleDelete": undefined,
+            "handleEdit": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "class",
+          "props": Object {
+            "card": Object {
+              "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+              "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+              "text": "GoldFinger kid",
             },
             "editable": true,
             "handleDelete": undefined,

@@ -18,6 +18,11 @@ ShallowWrapper {
               "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
               "text": "Knock knock. Who's there?",
             },
+            Object {
+              "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+              "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+              "text": "GoldFinger kid",
+            },
           ]
     }
     classes={Object {}}
@@ -61,6 +66,11 @@ ShallowWrapper {
                               Object {
                                 "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                                 "text": "Knock knock. Who's there?",
+                              },
+                              Object {
+                                "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+                                "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                                "text": "GoldFinger kid",
                               },
                             ]
           }
@@ -114,6 +124,11 @@ ShallowWrapper {
             Object {
               "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
               "text": "Knock knock. Who's there?",
+            },
+            Object {
+              "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+              "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+              "text": "GoldFinger kid",
             },
           ],
           "deleteCard": [Function],
@@ -185,6 +200,11 @@ ShallowWrapper {
                                       "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                                       "text": "Knock knock. Who's there?",
                                     },
+                                    Object {
+                                      "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+                                      "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                                      "text": "GoldFinger kid",
+                                    },
                                   ]
             }
             deleteCard={[Function]}
@@ -237,6 +257,11 @@ ShallowWrapper {
               Object {
                 "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
                 "text": "Knock knock. Who's there?",
+              },
+              Object {
+                "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+                "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+                "text": "GoldFinger kid",
               },
             ],
             "deleteCard": [Function],

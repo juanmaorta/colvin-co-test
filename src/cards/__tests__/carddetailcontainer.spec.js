@@ -29,9 +29,5 @@ describe('CardDetailContainer test suite', () => {
     it('should return undefined if card is not found', () => {
       expect(searchCard(stubs.cards, 12)).toBeUndefined()
     })
-
-    it('should the found card', () => {
-
-    })
   })
 })

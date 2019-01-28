@@ -1,5 +1,11 @@
+Shortlist
+
+
 - estados vacíos (cuando no hay cards)
-- use layout and grid
-- Flow or PropTypes
-- standard
+
+- alerta antes de borrar
+- añadir white card: revisa la parent card... añade al array
+
+
+
 - deploy at netlify?

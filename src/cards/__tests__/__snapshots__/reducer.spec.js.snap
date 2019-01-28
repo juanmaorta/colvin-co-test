@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducer test suite should add a card 1`] = `
+Array [
+  Object {
+    "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "GoldFinger: He's the man, the man with...",
+  },
+  Object {
+    "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
+    "text": "Instead of coal, Santa now gives the bad children...",
+  },
+  Object {
+    "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
+    "text": "Knock knock. Who's there?",
+  },
+  Object {
+    "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+    "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "GoldFinger kid",
+  },
+  Object {
+    "id": "b5123b46-1477-4177-be9a-4044cc395a46",
+    "text": "to be added",
+  },
+]
+`;
+
+exports[`reducer test suite should delete a card 1`] = `
+Array [
+  Object {
+    "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
+    "text": "Instead of coal, Santa now gives the bad children...",
+  },
+  Object {
+    "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
+    "text": "Knock knock. Who's there?",
+  },
+]
+`;
+
+exports[`reducer test suite should edit a card 1`] = `
+Array [
+  Object {
+    "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "the new text",
+  },
+  Object {
+    "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
+    "text": "Instead of coal, Santa now gives the bad children...",
+  },
+  Object {
+    "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
+    "text": "Knock knock. Who's there?",
+  },
+  Object {
+    "id": "2198fcf9-cb27-48e4-befa-aa77da6f1145",
+    "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "GoldFinger kid",
+  },
+]
+`;
+
+exports[`reducer test suite should return the default state 1`] = `
+Array [
+  Object {
+    "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "GoldFinger: He's the man, the man with...",
+  },
+  Object {
+    "id": "da1f1278-3f91-4529-8e55-81b4ffd621ac",
+    "text": "Instead of coal, Santa now gives the bad children...",
+  },
+  Object {
+    "id": "d50a2288-c93f-448f-8af6-3dc1b7268606",
+    "text": "Knock knock. Who's there?",
+  },
+  Object {
+    "id": "0f46704f-65c1-47b6-a05b-51eaba442817",
+    "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "1 ipsum dolor",
+  },
+  Object {
+    "id": "fb681a10-b46d-498b-b35c-2d07001703e8",
+    "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "2 ipsum dolor",
+  },
+  Object {
+    "id": "b42559cf-efda-42bf-80d9-088976cc697e",
+    "parentId": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
+    "text": "3 ipsum dolor",
+  },
+]
+`;

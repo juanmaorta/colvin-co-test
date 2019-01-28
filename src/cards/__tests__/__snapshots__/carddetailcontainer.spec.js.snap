@@ -32,7 +32,10 @@ ShallowWrapper {
         className={undefined}
 >
         <WithStyles(CardDetail)
+                addCard={[Function]}
                 card={undefined}
+                deleteCard={[Function]}
+                editCard={undefined}
         />
 </div>,
       "className": undefined,
@@ -44,7 +47,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <WithStyles(CardDetail)
+          addCard={[Function]}
           card={undefined}
+          deleteCard={[Function]}
+          editCard={undefined}
 />,
         "className": undefined,
       },
@@ -54,7 +60,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "addCard": [Function],
           "card": undefined,
+          "deleteCard": [Function],
+          "editCard": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -74,7 +83,10 @@ ShallowWrapper {
           className={undefined}
 >
           <WithStyles(CardDetail)
+                    addCard={[Function]}
                     card={undefined}
+                    deleteCard={[Function]}
+                    editCard={undefined}
           />
 </div>,
         "className": undefined,
@@ -86,7 +98,10 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <WithStyles(CardDetail)
+            addCard={[Function]}
             card={undefined}
+            deleteCard={[Function]}
+            editCard={undefined}
 />,
           "className": undefined,
         },
@@ -96,7 +111,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "addCard": [Function],
             "card": undefined,
+            "deleteCard": [Function],
+            "editCard": undefined,
           },
           "ref": null,
           "rendered": null,

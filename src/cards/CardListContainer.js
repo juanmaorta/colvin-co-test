@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
-import { generateRandomEmptyCard } from '../mocks/cards'
+import { generateRandomEmptyCard, getBlackCards } from '../util/cards'
 import CardList from './components/CardList'
 import {
   addCard,
@@ -15,7 +15,7 @@ import {
 import styles from '../styles'
 
 const mapStateToProps = (state) => ({
-  cards: state.cards
+  cards: getBlackCards(state.cards)
 })
 
 const mapDispatchToProps = (dispatch) => ({
