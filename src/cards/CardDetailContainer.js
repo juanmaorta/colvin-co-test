@@ -71,14 +71,12 @@ export class CardDetailContainer extends Component {
 
     return (
       <div className={classes.heroUnit}>
-        <div className={classes.heroContent}>
-          <CardDetail
+        <CardDetail
             card={card}
             addCard={() => addCard(card.id)}
             editCard={editCard}
             deleteCard={deleteCard}
           />
-        </div>
       </div>
     )
   }
