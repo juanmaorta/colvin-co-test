@@ -4,6 +4,7 @@ exports[`CardDetail snapshots should match for CardDetail component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WithStyles(CardDetail)
+    addCard={[Function]}
     card={
         Object {
             "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
@@ -11,6 +12,8 @@ ShallowWrapper {
           }
     }
     classes={Object {}}
+    deleteCard={[Function]}
+    editCard={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,6 +29,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "addCard": [Function],
       "card": Object {
         "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
         "text": "GoldFinger: He's the man, the man with...",
@@ -45,6 +49,8 @@ ShallowWrapper {
         "layout": "CardDetail-layout-11",
         "whiteTextField": "CardDetail-whiteTextField-13",
       },
+      "deleteCard": [Function],
+      "editCard": [Function],
     },
     "ref": null,
     "rendered": null,
@@ -56,6 +62,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "addCard": [Function],
         "card": Object {
           "id": "3c6f4977-c58b-460f-98ad-acd2fae3a2ce",
           "text": "GoldFinger: He's the man, the man with...",
@@ -75,6 +82,8 @@ ShallowWrapper {
           "layout": "CardDetail-layout-11",
           "whiteTextField": "CardDetail-whiteTextField-13",
         },
+        "deleteCard": [Function],
+        "editCard": [Function],
       },
       "ref": null,
       "rendered": null,

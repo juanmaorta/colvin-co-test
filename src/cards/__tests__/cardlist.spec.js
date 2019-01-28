@@ -9,8 +9,9 @@ describe('CardList snapshots', () => {
   it('should match for CardList component', () => {
     const wrapper = shallow(
       <CardList
-        classes={stubs.classes}
         cards={stubs.cards}
+        deleteCard={jest.fn}
+        editCard={jest.fn}
       />
     )
     expect(wrapper).toMatchSnapshot()

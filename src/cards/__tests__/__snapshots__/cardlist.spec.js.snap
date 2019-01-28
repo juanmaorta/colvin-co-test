@@ -25,7 +25,8 @@ ShallowWrapper {
             },
           ]
     }
-    classes={Object {}}
+    deleteCard={[Function]}
+    editCard={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -50,8 +51,8 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={undefined}
-          handleEdit={undefined}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
 />,
         <WithStyles(BlackCard)
           card={
@@ -61,8 +62,8 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={undefined}
-          handleEdit={undefined}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
 />,
         <WithStyles(BlackCard)
           card={
@@ -72,8 +73,8 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={undefined}
-          handleEdit={undefined}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
 />,
         <WithStyles(BlackCard)
           card={
@@ -84,8 +85,8 @@ ShallowWrapper {
                             }
           }
           editable={true}
-          handleDelete={undefined}
-          handleEdit={undefined}
+          handleDelete={[Function]}
+          handleEdit={[Function]}
 />,
       ],
       "container": true,
@@ -103,8 +104,8 @@ ShallowWrapper {
             "text": "GoldFinger: He's the man, the man with...",
           },
           "editable": true,
-          "handleDelete": undefined,
-          "handleEdit": undefined,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -120,8 +121,8 @@ ShallowWrapper {
             "text": "Instead of coal, Santa now gives the bad children...",
           },
           "editable": true,
-          "handleDelete": undefined,
-          "handleEdit": undefined,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -137,8 +138,8 @@ ShallowWrapper {
             "text": "Knock knock. Who's there?",
           },
           "editable": true,
-          "handleDelete": undefined,
-          "handleEdit": undefined,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -155,8 +156,8 @@ ShallowWrapper {
             "text": "GoldFinger kid",
           },
           "editable": true,
-          "handleDelete": undefined,
-          "handleEdit": undefined,
+          "handleDelete": [Function],
+          "handleEdit": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -180,8 +181,8 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={undefined}
-            handleEdit={undefined}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
 />,
           <WithStyles(BlackCard)
             card={
@@ -191,8 +192,8 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={undefined}
-            handleEdit={undefined}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
 />,
           <WithStyles(BlackCard)
             card={
@@ -202,8 +203,8 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={undefined}
-            handleEdit={undefined}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
 />,
           <WithStyles(BlackCard)
             card={
@@ -214,8 +215,8 @@ ShallowWrapper {
                                   }
             }
             editable={true}
-            handleDelete={undefined}
-            handleEdit={undefined}
+            handleDelete={[Function]}
+            handleEdit={[Function]}
 />,
         ],
         "container": true,
@@ -233,8 +234,8 @@ ShallowWrapper {
               "text": "GoldFinger: He's the man, the man with...",
             },
             "editable": true,
-            "handleDelete": undefined,
-            "handleEdit": undefined,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -250,8 +251,8 @@ ShallowWrapper {
               "text": "Instead of coal, Santa now gives the bad children...",
             },
             "editable": true,
-            "handleDelete": undefined,
-            "handleEdit": undefined,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -267,8 +268,8 @@ ShallowWrapper {
               "text": "Knock knock. Who's there?",
             },
             "editable": true,
-            "handleDelete": undefined,
-            "handleEdit": undefined,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -285,8 +286,8 @@ ShallowWrapper {
               "text": "GoldFinger kid",
             },
             "editable": true,
-            "handleDelete": undefined,
-            "handleEdit": undefined,
+            "handleDelete": [Function],
+            "handleEdit": [Function],
           },
           "ref": null,
           "rendered": null,

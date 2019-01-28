@@ -53,8 +53,11 @@ class CardDetail extends Component {
 }
 
 CardDetail.propTypes = {
+  addCard: PropTypes.func.isRequired,
   card: PropTypes.object.isRequired,
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  deleteCard: PropTypes.func.isRequired,
+  editCard: PropTypes.func.isRequired
 }
 
 export default withStyles(styles)(CardDetail)
