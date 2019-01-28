@@ -44,22 +44,20 @@ export class CardDetailContainer extends Component {
     super(props)
 
     this.state = {
-      card: this.searchCard(this.props.cards)
+      card: searchCard(this.props.cards, this.props.match.params.cardId)
     }
   }
 
-  searchCard = (cardList) => {
-    const cardId = this.props.match.params.cardId
-    return searchCard(cardList, cardId)
-  }
+  static getDerivedStateFromProps (props, state) {
+    const cardId = props.match.params.cardId
+    const card = searchCard(props.cards, cardId)
 
-  UNSAFE_componentWillReceiveProps (newProps) {
-    const card = this.searchCard(newProps.cards)
-    if (this.state.card.whiteCards.length !== card.whiteCards.length) {
-      this.setState({
+    if (card && card.whiteCards.length !== state.card.whiteCards.length) {
+      return {
         card
-      })
+      }
     }
+    return null
   }
 
   render () {

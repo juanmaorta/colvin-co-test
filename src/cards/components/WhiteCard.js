@@ -15,8 +15,7 @@ const WhiteCard = (props) => {
   const {
     card,
     classes,
-    handleDelete,
-    handleEdit
+    handleDelete
   } = props
 
   return (
@@ -26,7 +25,7 @@ const WhiteCard = (props) => {
           <Typography gutterBottom variant='h5' component='h2'>{card.text}</Typography>
         </CardContent>
         <CardActions>
-          <Button size='small' color='primary' onClick={() => handleEdit(card.id)}>
+          <Button size='small' color='primary'>
           Edit
           </Button>
           <Button size='small' color='secondary' onClick={() => handleDelete(card.id)}>
