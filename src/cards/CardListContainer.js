@@ -7,12 +7,9 @@ import { withStyles } from '@material-ui/core/styles'
 
 import { generateRandomEmptyCard, getBlackCards } from '../util/cards'
 import CardList from './components/CardList'
-import {
-  addCard,
-  deleteCard,
-  editCard
-} from './actions'
+import ConfirmDialog from './components/ConfirmDialog'
 import styles from '../styles'
+import { addCard, deleteCard, editCard } from './actions'
 
 const mapStateToProps = (state) => ({
   cards: getBlackCards(state.cards)
@@ -31,14 +28,46 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 export class CardListContainer extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      isDialogOpen: false,
+      cardToDelete: null
+    }
+  }
+
+  handleDeleteCard = (cardId) => {
+    this.setState({
+      isDialogOpen: true,
+      cardToDelete: cardId
+    })
+  }
+
+  closeDialog = () => {
+    this.setState({
+      isDialogOpen: false,
+      cardToDelete: null
+    })
+  }
+
+  doDeleteCard = (cardId) => {
+    this.props.deleteCard(cardId)
+    this.setState({
+      isDialogOpen: false,
+      cardToDelete: null
+    })
+  }
+
   render () {
     const {
       addCard,
       cards,
       classes,
-      deleteCard,
       editCard
     } = this.props
+
+    const { isDialogOpen, cardToDelete } = this.state
 
     return (
       <div className={classes.heroUnit}>
@@ -52,19 +81,33 @@ export class CardListContainer extends Component {
         </Typography>
         <CardList
           cards={cards}
-          deleteCard={deleteCard}
+          deleteCard={this.handleDeleteCard}
           editCard={editCard}
         />
         <div className={classes.buttons}>
           <Button variant='contained' onClick={addCard}>Add a black card</Button>
         </div>
+        <ConfirmDialog
+          open={isDialogOpen}
+          title='Please confirm you want to delete the card'
+          handleClose={this.closeDialog}
+          handleAccept={this.doDeleteCard}
+          cardId={cardToDelete}
+        />
       </div>
     )
   }
 }
 
 CardListContainer.propTypes = {
-  classes: PropTypes.object.isRequired
+  addCard: PropTypes.func.isRequired,
+  cards: PropTypes.array.isRequired,
+  classes: PropTypes.object.isRequired,
+  editCard: PropTypes.func.isRequired
+}
+
+CardListContainer.defaultProps = {
+  cards: []
 }
 
 export default withStyles(styles)(

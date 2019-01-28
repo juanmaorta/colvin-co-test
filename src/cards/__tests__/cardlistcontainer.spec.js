@@ -11,7 +11,7 @@ describe('CardListContainer snapshots', () => {
       <CardListContainer
         classes={stubs.classes}
         cards={stubs.cards}
-        deleteCard={jest.fn}
+        addCard={jest.fn}
         editCard={jest.fn}
       />
     )

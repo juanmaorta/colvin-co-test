@@ -17,7 +17,8 @@ describe('CardDetailContainer test suite', () => {
       const wrapper = shallow(
         <CardDetailContainer
           classes={stubs.classes}
-          deleteCard={jest.fn}
+          addCard={jest.fn}
+          editCard={jest.fn}
           match={match}
         />
       )

@@ -4,8 +4,9 @@ exports[`CardDetailContainer test suite CardDetailContainer snapshots should mat
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardDetailContainer
+    addCard={[Function]}
     classes={Object {}}
-    deleteCard={[Function]}
+    editCard={[Function]}
     match={
         Object {
             "params": Object {
@@ -28,29 +29,55 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <WithStyles(CardDetail)
-        addCard={[Function]}
-        card={undefined}
-        deleteCard={[Function]}
-        editCard={undefined}
+      "children": Array [
+        <WithStyles(CardDetail)
+          addCard={[Function]}
+          card={undefined}
+          deleteCard={[Function]}
+          editCard={[Function]}
 />,
+        <ConfirmDialog
+          cardId={null}
+          handleAccept={[Function]}
+          handleClose={[Function]}
+          open={false}
+          title="Please confirm you want to delete the card"
+/>,
+      ],
       "className": undefined,
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "addCard": [Function],
-        "card": undefined,
-        "deleteCard": [Function],
-        "editCard": undefined,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "addCard": [Function],
+          "card": undefined,
+          "deleteCard": [Function],
+          "editCard": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "cardId": null,
+          "handleAccept": [Function],
+          "handleClose": [Function],
+          "open": false,
+          "title": "Please confirm you want to delete the card",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -59,29 +86,55 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <WithStyles(CardDetail)
-          addCard={[Function]}
-          card={undefined}
-          deleteCard={[Function]}
-          editCard={undefined}
+        "children": Array [
+          <WithStyles(CardDetail)
+            addCard={[Function]}
+            card={undefined}
+            deleteCard={[Function]}
+            editCard={[Function]}
 />,
+          <ConfirmDialog
+            cardId={null}
+            handleAccept={[Function]}
+            handleClose={[Function]}
+            open={false}
+            title="Please confirm you want to delete the card"
+/>,
+        ],
         "className": undefined,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "addCard": [Function],
-          "card": undefined,
-          "deleteCard": [Function],
-          "editCard": undefined,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "addCard": [Function],
+            "card": undefined,
+            "deleteCard": [Function],
+            "editCard": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "cardId": null,
+            "handleAccept": [Function],
+            "handleClose": [Function],
+            "open": false,
+            "title": "Please confirm you want to delete the card",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],

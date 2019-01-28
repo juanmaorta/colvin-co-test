@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmDialog snapshots should match for ConfirmDialog component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ConfirmDialog
+    cardId="3c6f4977-c58b-460f-98ad-acd2fae3a2ce"
+    handleAccept={[Function]}
+    handleClose={[Function]}
+    open={true}
+    title="Some random title"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "aria-describedby": "alert-dialog-description",
+      "aria-labelledby": "alert-dialog-title",
+      "children": Array [
+        <WithStyles(DialogTitle)
+          id="alert-dialog-title"
+>
+          Some random title
+</WithStyles(DialogTitle)>,
+        <WithStyles(DialogActions)>
+          <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+          >
+                    Accept
+          </WithStyles(Button)>
+          <WithStyles(Button)
+                    autoFocus={true}
+                    color="primary"
+                    onClick={[Function]}
+          >
+                    Cancel
+          </WithStyles(Button)>
+</WithStyles(DialogActions)>,
+      ],
+      "onClose": [Function],
+      "open": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Some random title",
+          "id": "alert-dialog-title",
+        },
+        "ref": null,
+        "rendered": "Some random title",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Button)
+              color="primary"
+              onClick={[Function]}
+>
+              Accept
+</WithStyles(Button)>,
+            <WithStyles(Button)
+              autoFocus={true}
+              color="primary"
+              onClick={[Function]}
+>
+              Cancel
+</WithStyles(Button)>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Accept",
+              "color": "primary",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Accept",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoFocus": true,
+              "children": "Cancel",
+              "color": "primary",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Cancel",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "aria-describedby": "alert-dialog-description",
+        "aria-labelledby": "alert-dialog-title",
+        "children": Array [
+          <WithStyles(DialogTitle)
+            id="alert-dialog-title"
+>
+            Some random title
+</WithStyles(DialogTitle)>,
+          <WithStyles(DialogActions)>
+            <WithStyles(Button)
+                        color="primary"
+                        onClick={[Function]}
+            >
+                        Accept
+            </WithStyles(Button)>
+            <WithStyles(Button)
+                        autoFocus={true}
+                        color="primary"
+                        onClick={[Function]}
+            >
+                        Cancel
+            </WithStyles(Button)>
+</WithStyles(DialogActions)>,
+        ],
+        "onClose": [Function],
+        "open": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Some random title",
+            "id": "alert-dialog-title",
+          },
+          "ref": null,
+          "rendered": "Some random title",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Button)
+                color="primary"
+                onClick={[Function]}
+>
+                Accept
+</WithStyles(Button)>,
+              <WithStyles(Button)
+                autoFocus={true}
+                color="primary"
+                onClick={[Function]}
+>
+                Cancel
+</WithStyles(Button)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Accept",
+                "color": "primary",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Accept",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "autoFocus": true,
+                "children": "Cancel",
+                "color": "primary",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Cancel",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

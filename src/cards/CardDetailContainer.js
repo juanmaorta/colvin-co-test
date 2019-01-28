@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/core/styles'
 import { getWhiteCardsByParent, generateRandomEmptyCard } from '../util/cards'
 import styles from '../styles'
 import CardDetail from './components/CardDetail'
+import ConfirmDialog from './components/ConfirmDialog'
 import {
   addCard,
   deleteCard,
@@ -44,7 +45,9 @@ export class CardDetailContainer extends Component {
     super(props)
 
     this.state = {
-      card: searchCard(this.props.cards, this.props.match.params.cardId)
+      card: searchCard(this.props.cards, this.props.match.params.cardId),
+      isDialogOpen: false,
+      cardToDelete: null
     }
   }
 
@@ -60,30 +63,61 @@ export class CardDetailContainer extends Component {
     return null
   }
 
+  handleDeleteCard = (cardId) => {
+    this.setState({
+      isDialogOpen: true,
+      cardToDelete: cardId
+    })
+  }
+
+  closeDialog = () => {
+    this.setState({
+      isDialogOpen: false,
+      cardToDelete: null
+    })
+  }
+
+  doDeleteCard = (cardId) => {
+    this.props.deleteCard(cardId)
+    this.setState({
+      isDialogOpen: false,
+      cardToDelete: null
+    })
+  }
+
   render () {
     const {
       classes,
       addCard,
-      editCard,
-      deleteCard
+      editCard
     } = this.props
-    const { card } = this.state
+
+    const { card, isDialogOpen, cardToDelete } = this.state
 
     return (
       <div className={classes.heroUnit}>
         <CardDetail
-            card={card}
-            addCard={() => addCard(card.id)}
-            editCard={editCard}
-            deleteCard={deleteCard}
-          />
+          card={card}
+          addCard={() => addCard(card.id)}
+          editCard={editCard}
+          deleteCard={this.handleDeleteCard}
+        />
+        <ConfirmDialog
+          open={isDialogOpen}
+          title='Please confirm you want to delete the card'
+          handleClose={this.closeDialog}
+          handleAccept={this.doDeleteCard}
+          cardId={cardToDelete}
+        />
       </div>
     )
   }
 }
 
 CardDetailContainer.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  addCard: PropTypes.func.isRequired,
+  editCard: PropTypes.func.isRequired
 }
 
 export default withStyles(styles)(

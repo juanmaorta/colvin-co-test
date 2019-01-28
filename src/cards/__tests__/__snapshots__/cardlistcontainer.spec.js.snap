@@ -4,6 +4,7 @@ exports[`CardListContainer snapshots should match for CardListContainer componen
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardListContainer
+    addCard={[Function]}
     cards={
         Array [
             Object {
@@ -26,7 +27,6 @@ ShallowWrapper {
           ]
     }
     classes={Object {}}
-    deleteCard={[Function]}
     editCard={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -83,12 +83,19 @@ ShallowWrapper {
           className={undefined}
 >
           <WithStyles(Button)
-                    onClick={undefined}
+                    onClick={[Function]}
                     variant="contained"
           >
                     Add a black card
           </WithStyles(Button)>
 </div>,
+        <ConfirmDialog
+          cardId={null}
+          handleAccept={[Function]}
+          handleClose={[Function]}
+          open={false}
+          title="Please confirm you want to delete the card"
+/>,
       ],
       "className": undefined,
     },
@@ -164,7 +171,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <WithStyles(Button)
-            onClick={undefined}
+            onClick={[Function]}
             variant="contained"
 >
             Add a black card
@@ -178,7 +185,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "Add a black card",
-            "onClick": undefined,
+            "onClick": [Function],
             "variant": "contained",
           },
           "ref": null,
@@ -186,6 +193,21 @@ ShallowWrapper {
           "type": [Function],
         },
         "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "cardId": null,
+          "handleAccept": [Function],
+          "handleClose": [Function],
+          "open": false,
+          "title": "Please confirm you want to delete the card",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -236,12 +258,19 @@ ShallowWrapper {
             className={undefined}
 >
             <WithStyles(Button)
-                        onClick={undefined}
+                        onClick={[Function]}
                         variant="contained"
             >
                         Add a black card
             </WithStyles(Button)>
 </div>,
+          <ConfirmDialog
+            cardId={null}
+            handleAccept={[Function]}
+            handleClose={[Function]}
+            open={false}
+            title="Please confirm you want to delete the card"
+/>,
         ],
         "className": undefined,
       },
@@ -317,7 +346,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <WithStyles(Button)
-              onClick={undefined}
+              onClick={[Function]}
               variant="contained"
 >
               Add a black card
@@ -331,7 +360,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Add a black card",
-              "onClick": undefined,
+              "onClick": [Function],
               "variant": "contained",
             },
             "ref": null,
@@ -339,6 +368,21 @@ ShallowWrapper {
             "type": [Function],
           },
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "cardId": null,
+            "handleAccept": [Function],
+            "handleClose": [Function],
+            "open": false,
+            "title": "Please confirm you want to delete the card",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",
