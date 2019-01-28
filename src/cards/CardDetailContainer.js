@@ -34,8 +34,8 @@ const mapDispatchToProps = (dispatch) => ({
   deleteCard: (parentCard, whiteCard) => {
     return dispatch(deleteCard(parentCard, whiteCard))
   },
-  editCard: () => {
-    return dispatch(editCard())
+  editCard: (card) => {
+    return dispatch(editCard(card))
   }
 })
 

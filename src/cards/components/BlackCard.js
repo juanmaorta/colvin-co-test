@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography'
 
 import { withStyles } from '@material-ui/core/styles'
 
+import { ENTER_KEY, ESCAPE_KEY } from '../../util/constants'
 import styles from '../../styles'
 
 class BlackCard extends Component {
@@ -19,15 +20,34 @@ class BlackCard extends Component {
 
     this.state = {
       isEditing: this.props.card.isEditing || this.props.isEditing,
-      text: this.props.card.text
+      text: this.props.card.text,
+      undoText: this.props.card.text
     }
+  }
+
+  onKeyDown = event => {
+    switch (event.keyCode) {
+      case ENTER_KEY:
+        this.toggleEdit()
+        break
+      case ESCAPE_KEY:
+        this.cancelEdit()
+        break
+      default:
+    }
+  }
+
+  cancelEdit = () => {
+    this.setState({
+      isEditing: !this.state.isEditing,
+      text: this.state.undoText
+    })
   }
 
   handleChange = name => event => {
     this.setState({
       [name]: event.target.value
     })
-    // capture return key
   }
 
   toggleEdit = () => {
@@ -41,7 +61,8 @@ class BlackCard extends Component {
       )
     }
     this.setState({
-      isEditing: !this.state.isEditing
+      isEditing: !this.state.isEditing,
+      undoText: this.state.text
     })
   }
 
@@ -76,6 +97,7 @@ class BlackCard extends Component {
                 value={this.state.text}
                 onChange={this.handleChange('text')}
                 onBlur={this.toggleEdit}
+                onKeyDown={this.onKeyDown}
                 margin='normal'
               />
             }
